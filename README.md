@@ -48,7 +48,7 @@ be performed.
 
 An overview of the design tried to be implemented is shown below.
 
-<img src="https://gitlab-fnwi.uva.nl/10552073/scriptie-framework/raw/master/doc/FrameworkDesign.png" width="600">
+<img src="https://github.com/zen-char/DBMS-Fault-Injection-Framework/raw/master/doc/FrameworkDesign.png" width="600">
 
 The arrows are directing the communication flows between the components. 
 
