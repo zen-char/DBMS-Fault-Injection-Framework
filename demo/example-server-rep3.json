@@ -1,0 +1,208 @@
+{
+  "server_meta" :
+  {
+    "n_nodes" : 3,
+    "user" : "user",
+    "host" :
+    [
+      "host_1",
+      "host_2",
+      "host_3"
+    ]
+  },
+  "db_type" : "cassandra",
+  "db_version": "3.5",
+  "db_meta" :
+  {
+    "connection_ip":
+     [
+      "private_ip_1",
+      "private_ip_2",
+      "private_ip_3"
+    ],
+    "init" :
+    {
+      "class": "SimpleStrategy",
+      "replication_factor": 3
+    },
+    "reuse_keyspace" : true,
+    "keyspace" : "files"
+  },
+  "test_scenarios" :
+   {
+    "repetitions": 100,
+    "data_type": "files",
+    "scenarios":
+    [
+      {
+        "FI_type": "bitflip",
+        "num_files": 1,
+        "excluded_extensions":
+        [
+          ".log",
+          ".jar",
+          ".java",
+          ".log.0.current",
+          ".so",
+          ".yaml",
+          "Index.db"
+        ],
+        "exclude_containing":
+        [
+          "/jvm/"
+        ],
+        "flips_per_file": 1,
+        "start_delay_ms": 0,
+        "delay_ms": 0
+      },
+      {
+        "FI_type": "bitflip",
+        "num_files": 2,
+        "excluded_extensions":
+        [
+          ".log",
+          ".jar",
+          ".java",
+          ".log.0.current",
+          ".so",
+          ".yaml",
+          "Index.db"
+        ],
+        "exclude_containing":
+        [
+          "/jvm/"
+        ],
+        "flips_per_file": 1,
+        "start_delay_ms": 0,
+        "delay_ms": 0
+      },
+      {
+        "FI_type": "bitflip",
+        "num_files": 5,
+        "excluded_extensions":
+        [
+          ".log",
+          ".jar",
+          ".java",
+          ".log.0.current",
+          ".so",
+          ".yaml",
+          "Index.db"
+        ],
+        "exclude_containing":
+        [
+          "/jvm/"
+        ],
+        "flips_per_file": 1,
+        "start_delay_ms": 0,
+        "delay_ms": 0
+      },
+      {
+        "FI_type": "bitflip",
+        "num_files": 10,
+        "excluded_extensions":
+        [
+          ".log",
+          ".jar",
+          ".java",
+          ".log.0.current",
+          ".so",
+          ".yaml",
+          "Index.db"
+        ],
+        "exclude_containing":
+        [
+          "/jvm/"
+        ],
+        "flips_per_file": 1,
+        "start_delay_ms": 0,
+        "delay_ms": 0
+      },
+      {
+        "FI_type": "bitflip",
+        "num_files": 1,
+        "excluded_extensions":
+        [
+          ".log",
+          ".jar",
+          ".java",
+          ".log.0.current",
+          ".so",
+          ".yaml"
+        ],
+        "exclude_containing":
+        [
+          "/jvm/"
+        ],
+        "flips_per_file": 1,
+        "start_delay_ms": 0,
+        "delay_ms": 0
+      },
+      {
+        "FI_type": "bitflip",
+        "num_files": 2,
+        "excluded_extensions":
+        [
+          ".log",
+          ".jar",
+          ".java",
+          ".log.0.current",
+          ".so",
+          ".yaml"
+        ],
+        "exclude_containing":
+        [
+          "/jvm/"
+        ],
+        "flips_per_file": 1,
+        "start_delay_ms": 0,
+        "delay_ms": 0
+      },
+      {
+        "FI_type": "bitflip",
+        "num_files": 5,
+        "excluded_extensions":
+        [
+          ".log",
+          ".jar",
+          ".java",
+          ".log.0.current",
+          ".so",
+          ".yaml"
+        ],
+        "exclude_containing":
+        [
+          "/jvm/"
+        ],
+        "flips_per_file": 1,
+        "start_delay_ms": 0,
+        "delay_ms": 0
+      },
+      {
+        "FI_type": "bitflip",
+        "num_files": 10,
+        "excluded_extensions":
+        [
+          ".log",
+          ".jar",
+          ".java",
+          ".log.0.current",
+          ".so",
+          ".yaml"
+        ],
+        "exclude_containing":
+        [
+          "/jvm/"
+        ],
+        "flips_per_file": 1,
+        "start_delay_ms": 0,
+        "delay_ms": 0
+      }
+    ]
+  },
+  "data_to_insert" :
+  {
+    "files" : "datasets/complete_ms_data/"
+  },
+  "query_file" : "example_q.json"
+}

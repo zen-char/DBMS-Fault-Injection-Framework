@@ -1,0 +1,8 @@
+*.png
+*.bpm
+*.zip
+*.tar.gz
+*.csv
+.idea/*
+*.pyc
+Thumbs.db

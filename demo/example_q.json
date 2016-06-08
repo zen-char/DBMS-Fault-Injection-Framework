@@ -1,0 +1,66 @@
+{
+  "queries" :
+    [
+      "SELECT * FROM balloons_ms;",
+      "SELECT * FROM beads_ms;",
+      "SELECT * FROM cd_ms;",
+      "SELECT * FROM chart_and_stuffed_toy_ms;",
+      "SELECT * FROM clay_ms;",
+      "SELECT * FROM cloth_ms;",
+      "SELECT * FROM egyptian_statue_ms;",
+      "SELECT * FROM face_ms;",
+      "SELECT * FROM fake_and_real_beers_ms;",
+      "SELECT * FROM fake_and_real_food_ms;",
+      "SELECT * FROM fake_and_real_lemon_slices_ms;",
+      "SELECT * FROM fake_and_real_peppers_ms;",
+      "SELECT * FROM fake_and_real_strawberries_ms;",
+      "SELECT * FROM fake_and_real_sushi_ms;",
+      "SELECT * FROM fake_and_real_tomatoes_ms;",
+      "SELECT * FROM feathers_ms;",
+      "SELECT * FROM flowers_ms;",
+      "SELECT * FROM glass_tiles_ms;",
+      "SELECT * FROM hairs_ms;",
+      "SELECT * FROM jelly_beans_ms;",
+      "SELECT * FROM oil_painting_ms;",
+      "SELECT * FROM paints_ms;",
+      "SELECT * FROM photo_and_face_ms;",
+      "SELECT * FROM pompoms_ms;",
+      "SELECT * FROM real_and_fake_apples_ms;",
+      "SELECT * FROM real_and_fake_peppers_ms;",
+      "SELECT * FROM paints_ms;",
+      "SELECT * FROM stuffed_toys_ms;",
+      "SELECT * FROM superballs_ms;",
+      "SELECT * FROM thread_spools_ms;",
+      "SELECT * FROM watercolors_ms;",
+
+      "SELECT * FROM clay_ms WHERE file_name > 'clay_ms_10.png' LIMIT 20 ALLOW FILTERING;",
+      "SELECT * FROM clay_ms WHERE file_name <= 'clay_ms_10.png' LIMIT 10 ALLOW FILTERING;",
+
+      "SELECT * FROM face_ms WHERE file_name <= 'face_ms_20.png' LIMIT 15 ALLOW FILTERING;",
+      "SELECT * FROM face_ms WHERE file_name > 'face_ms_20.png' LIMIT 10 ALLOW FILTERING;",
+
+      "SELECT * FROM sponges_ms WHERE file_name = 'sponges_ms_10.png' LIMIT 1 ALLOW FILTERING;",
+      "SELECT * FROM sponges_ms WHERE file_name > 'sponges_ms_10.png' LIMIT 30 ALLOW FILTERING;",
+
+      "SELECT * FROM beads_ms WHERE file_name >= 'beads_ms_01.png' LIMIT 33 ALLOW FILTERING;",
+      "SELECT * FROM feathers_ms WHERE file_name >= 'feathers_ms_10.png' AND file_name <= 'feathers_ms_20.png' LIMIT 10 ALLOW FILTERING;",
+
+      "SELECT * FROM watercolors_ms WHERE file_name >= 'watercolors_ms_05.png' AND file_name <= 'watercolors_ms_15.png' LIMIT 7 ALLOW FILTERING;",
+      "SELECT * FROM cloth_ms WHERE file_name >= 'cloth_ms_03.png' AND file_name <= 'watercolors_ms_23.png' LIMIT 17 ALLOW FILTERING;",
+      "SELECT * FROM cd_ms WHERE file_name > 'cd_ms_15.png' AND file_name <= 'cd_ms_RGB.bpm' LIMIT 10 ALLOW FILTERING;",
+      "SELECT * FROM paints_ms WHERE file_name > 'paints_ms_11.png' AND file_name < 'paints_ms_RGB.bpm' ALLOW FILTERING;",
+      "SELECT * FROM pompoms_ms WHERE file_name >= 'pompoms_ms_07.png' AND file_name <= 'pompoms_ms_19.png' ALLOW FILTERING;",
+
+      "SELECT * FROM oil_painting_ms WHERE file_name >= 'oil_painting_ms_08.png' AND file_name <= 'oil_painting_ms_22.png' ALLOW FILTERING;",
+      "SELECT * FROM balloons_ms WHERE file_name >= 'balloons_ms_01.png' AND file_name <= 'balloons_ms_15.png' ALLOW FILTERING;",
+      "SELECT * FROM photo_and_face_ms WHERE file_name >= 'photo_and_face_ms_10.png' AND file_name <= 'photo_and_face_ms_30.png' ALLOW FILTERING;",
+      "SELECT * FROM thread_spools_ms WHERE file_name <= 'thread_spools_ms_15.png' ALLOW FILTERING;",
+      "SELECT * FROM fake_and_real_beers_ms WHERE file_name > 'fake_and_real_beers_ms_09.png' LIMIT 20 ALLOW FILTERING;",
+
+      "SELECT * FROM glass_tiles_ms WHERE file_name >= 'glass_tiles_ms_09.png' AND file_name <= 'glass_tiles_ms_29.png' ALLOW FILTERING;",
+      "SELECT * FROM fake_and_real_peppers_ms WHERE file_name > 'fake_and_real_peppers_ms_21.png' AND file_name < 'fake_and_real_peppers_ms_28.png' LIMIT 5 ALLOW FILTERING;",
+      "SELECT * FROM jelly_beans_ms WHERE file_name > 'jelly_beans_ms_03.png' AND file_name < 'jelly_beans_ms_19.png' LIMIT 13 ALLOW FILTERING;",
+      "SELECT * FROM superballs_ms WHERE file_name > 'superballs_ms_26.png' AND file_name < 'superballs_ms_RGB.bpm' ALLOW FILTERING;",
+      "SELECT * FROM chart_and_stuffed_toy_ms WHERE file_name > 'chart_and_stuffed_toy_ms_01.png' LIMIT 20 ALLOW FILTERING;"
+     ]
+}
